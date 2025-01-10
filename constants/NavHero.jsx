@@ -2,17 +2,18 @@ export const NavData = [
     {
         id: 1,
         title: "Home",
-        url: "/",
+        href: '/'
     },
     {
         id: 2,
         title: "About",
-        url: "/about",
+        href: '/about'
+
     },
     {
         id: 3,
         title: "Contact",
-        url: "/contact",
+        href: '/contact'
     },
 
 ];

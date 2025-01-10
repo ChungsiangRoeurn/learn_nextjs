@@ -1,10 +1,9 @@
-import React from 'react'
-import LoginForm from './LoginForm'
+import Contact from './Contact'
 
 const page = () => {
     return (
         <div>
-            <LoginForm />
+            <Contact />
         </div>
     )
 }

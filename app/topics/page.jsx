@@ -1,10 +1,10 @@
 import React from 'react'
-import LoginForm from './LoginForm'
+import BookList from './BookList'
 
-const page = () => {
+function page() {
     return (
         <div>
-            <LoginForm />
+            <BookList />
         </div>
     )
 }
