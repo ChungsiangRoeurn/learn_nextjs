@@ -1,6 +1,9 @@
+'use client'
+
 import { HeroItems } from "@/constants/HeroItems"
 import { NavData } from "@/constants/NavHero"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 const Hero = () => {
   return (
@@ -21,7 +24,7 @@ const Hero = () => {
                   <li key={item.id} className='group relative'>
                     <Link
                       href={item.href}
-                      className='text-warning transition-colors duration-300 hover:text-prsimary'
+                      className={usePathname() === item.href ? "text-warning" : "hover:text-primary text-warning transition-colors duration-300"}
                     >
                       {item.title}
                     </Link>
